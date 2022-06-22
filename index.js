@@ -1,14 +1,18 @@
-let computerChoices = [{choice: 'Rock', value: 0}, {choice: 'Paper', value: 1}, {choice: 'Scissors', value: 2}];
+const choices = ["rock", "paper", "sissors"]
 
-function computerPlay() {
-  let result = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-  return result;
+function game() {
+playRound();
 }
 
-let sign = prompt("Rock, Paper or Sissors?");
-
-if (sign.toLowerCase() == "rock") {
-  alert("a Rock!")
+function playRound() {
+  const playerSelection = playerChoice();
+  const computerSelection = computerChoice();
 }
 
-console.log (computerPlay())
+function playerChoice() {
+  //get input from player
+}
+
+function computerChoice() {
+  return choices[Math.floor(Math.random()*choices.length)]
+}
