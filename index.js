@@ -1,4 +1,4 @@
-const choices = ["rock", "paper", "sissors"]
+const choices = ["rock", "paper", "sissors"];
 
 function game() {
 playRound();
@@ -10,9 +10,12 @@ function playRound() {
 }
 
 function playerChoice() {
-  //get input from player
+  let input = prompt("Type Rock, Paper, or Sissors");
+  input = input.toLowerCase(input);
 }
 
 function computerChoice() {
   return choices[Math.floor(Math.random()*choices.length)]
 }
+
+game();
