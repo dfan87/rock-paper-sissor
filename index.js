@@ -13,7 +13,7 @@ function playRound(round) {
   const computerSelection = computerChoice();
   const winner = checkWinner(playerSelection, computerSelection);
   winners.push(winner);
-  logRound(playerSelection,computerSelection,winner,round)
+  logRound(playerSelection,computerSelection,winner,round);
 }
 
 function playerChoice() {
